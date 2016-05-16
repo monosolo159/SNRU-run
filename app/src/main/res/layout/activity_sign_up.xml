@@ -38,7 +38,7 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText"
+                android:id="@+id/edtName"
                 android:layout_weight="2" />
         </LinearLayout>
 
@@ -58,7 +58,7 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText2"
+                android:id="@+id/edtUser"
                 android:layout_weight="2" />
         </LinearLayout>
 
@@ -78,8 +78,9 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText3"
-                android:layout_weight="2" />
+                android:id="@+id/edtPass"
+                android:layout_weight="2"
+                android:password="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -95,12 +96,13 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:id="@+id/radAvata">
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioButton"
+                        android:id="@+id/radioButton1"
                         android:checked="true"
                         android:layout_marginTop="15dp" />
 
@@ -176,7 +178,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="SIGN UP"
         android:id="@+id/button"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:onClick="clickSingUpSign" />
 </RelativeLayout>
